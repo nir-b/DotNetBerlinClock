@@ -8,6 +8,6 @@ Conceptuallly the entire problem can be decomposed into just three classes The C
 
 Each ClockRow whether it is Hour, Minute or Second is inherently the same object - they only differ in the number of lamps and their behaviour. Once we can isolate this difference in behaviour which is nothing but different mechanisms of lighting the lamps for an individual row, our object model becomes quite simple and elegant even.
 
-The function of the Clock class is then to simply distribute the respective time components to each ClockRow and set their individual behaviour. The advantage of this approach is that within the Clock class one can almost describe the clock construction, by declaratively building up each ClockRow.
+The responsibility of the Clock class is then to simply distribute the respective time components to each ClockRow and set their individual behaviour. The advantage of this approach is that within the Clock class one can almost describe the clock construction, by declaratively building up each ClockRow.
 
-With each ClockRow then responsible for displaying itself. 
+And then each ClockRow is responsible for displaying itself. 
