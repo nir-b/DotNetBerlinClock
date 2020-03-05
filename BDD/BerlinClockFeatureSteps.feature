@@ -38,14 +38,3 @@ RRRO
 YYRYYRYYRYY
 YYYY
 """
-
-Scenario: Midnight 24:00
-When the time is "24:00:00"
-Then the clock should look like
-"""
-Y
-RRRR
-RRRR
-OOOOOOOOOOO
-OOOO
-"""
